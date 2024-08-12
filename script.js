@@ -66,6 +66,8 @@ function calculate() {
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML += `
         <h2>Resultado del Cálculo</h2>
+        <p>Dimensiones del Contenedor: ${containerWidth}x${containerHeight}x${containerLength} cm</p>
+        <p>Volumen del Contenedor: ${containerVolume} cm³</p>
         <p>Cantidad Total de Cajas: ${boxes.reduce((total, box) => total + box.quantity, 0)}</p>
         <p>Cantidad de Contenedores Necesarios: ${containersNeeded}</p>
         <p>Volumen Total Utilizado: ${totalBoxVolume} cm³</p>
